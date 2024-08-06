@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+   <head>
+        <meta charset="utf-8">
+        <title>Info.G Cloud Storage Viewer</title>
+        <script src="/azureFiles.fe8d04fa.js"></script>
+        <link rel="stylesheet" href="/azureFiles.71282821.css">
+    <script src="/azureFiles.71282821.js"></script></head>
+    <body>
+        <div id="NavigationMenu">
+            <h3>Azure Cloud Masuda storage</h3>
+            <h4>Select Container</h4>
+            <p class="select">
+                <select id="select-container" name="container">
+                </select>
+            </p>
+            <h4>Select Folder</h4>
+            <div id="folder">
+                <label>
+                    <input type="radio" name="folderName" checked="">.<br>
+                </label>
+            </div>
+            <h4>Create Folder</h4>
+            <div id="createFolder">
+                <p class="create">New Folder Name</p>
+                <input id="newFolder" class="create" type="text">
+                <button id="createButton" class="create">Create</button>             
+            </div>
+        </div>
+
+        <div id="Content">
+            <h3>FolderName: </h3>
+            <h4>Files in Current Folder</h4>
+            <div id="files">
+            </div>
+            <button id="loadFile" class="action">Load local PC</button>             
+            <button id="deleteFile" class="action">Delete storage file</button>
+            <h4>Choose & upload file</h4>
+            <div id="upload">
+                <p class="create">Drag and drop here</p>
+                <input type="file" class="action" id="uploadFile">             
+            </div>
+             
+        </div>
+    </body>
+</html>
+
+<!--
+sandbox area
+
+-->
